@@ -1,0 +1,130 @@
+.disc {
+    width: 50%;
+}
+
+.table {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: #949494 1px 1px 20px;
+}
+
+th {
+    color: #fff;
+    background: #FF6000;
+    padding: 10px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+}
+
+th:first-child {
+    border-radius: 10px 0 0 0;
+}
+th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+td {
+    padding: 10px;
+    height: 20px;
+    border-bottom: 1px solid #E3E3E3;
+    border-right: 1px solid #E3E3E3;
+    width: 200px;
+    font-family: "Inter", sans-serif;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+tr td:last-child {
+    border-right: none;
+}
+
+.event {
+    display: flex;
+    position: relative;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+    padding: 5px 0 20px;
+    border-radius: 5px;
+    box-shadow: #949494 1px 1px 3px;
+    cursor: pointer;
+}
+.inf {
+    box-shadow: #6B6B6B 1px 1px 3px;
+    width: 300px;
+    padding: 20px;
+    position: absolute;
+    z-index: 10;
+    border-radius: 5px;
+    top: 120%;
+    display: none;
+
+}
+
+.infArrow {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    height: 20px;
+    width: 20px;
+    z-index: 9;
+}
+
+.event:hover .inf {
+    display: block;
+}
+
+.time {
+    position: absolute;
+    right: 5px;
+    bottom: 2px;
+    font-size: 18px;
+}
+
+
+
+
+.SearchTable {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: #949494 1px 1px 20px;
+    text-align: center;
+    z-index: 10;
+}
+
+.noResults {
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    margin: 0 0 100px 0;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-size: 19px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: #949494 2px 2px 10px;
+}
+
+.noResults img {
+    width: 100px;
+    margin: 20px 0 0 0;
+    z-index: 0;
+}

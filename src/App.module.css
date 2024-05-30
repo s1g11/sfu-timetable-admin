@@ -1,0 +1,172 @@
+body {
+  background: #F1F1F1;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.app {
+
+}
+
+.container {
+  margin: 0 auto;
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.monthSelect {
+  margin: 20px 0;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.month{
+  margin: 0 20px;
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+}
+
+.monthSelect button {
+  background: #FF6000;
+  border: none;
+  padding: 0 10px;
+  font-size: 25px;
+  border-radius: 5px;
+  box-shadow: #949494 1px 1px 5px;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.monthSelect button:hover {
+  cursor: pointer;
+  box-shadow: #FF6000 1px 1px 5px;
+  background: #FF3E00;
+}
+
+.input {
+  margin: 80px 0 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 17px;
+  border: 1px solid #717171;
+  box-shadow: #949494 1px 1px 5px;
+  margin: 0 10px 0 0;
+  transition: 0.2s;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: #505050 1px 1px 5px;
+}
+
+.lupa {
+  background: #FF6000;
+  border: none;
+  padding: 0 10px;
+  font-size: 25px;
+  border-radius: 5px;
+  box-shadow: #949494 1px 1px 5px;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.lupa:hover {
+  cursor: pointer;
+  box-shadow: #FF6000 1px 1px 5px;
+  background: #FF3E00;
+}
+
+.lupa img {
+  width: 20px;
+  height: 20px;
+}
+
+.addEvent {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 30px 0 0 0;
+}
+
+.addEvent input {
+  margin: 0 0 10px 0;
+}
+
+
+.addEvent button {
+  background: #FF6000;
+  border: none;
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: #949494 1px 1px 5px;
+  color: #fff;
+  transition: 0.2s;
+  margin: 0 0 10px 0;
+}
+
+.addEvent button:hover {
+  cursor: pointer;
+  box-shadow: #FF6000 1px 1px 5px;
+  background: #FF3E00;
+}
