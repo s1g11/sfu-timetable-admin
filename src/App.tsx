@@ -39,8 +39,15 @@ function App() {
     }
 
     const changeEvent = async () => {
+        const one = date.split('.')[1] + '.' + date.split('.')[2]
+
+        if (date.split('.')[1].length === 2) {
+            const one = date.split('.')[1][1] + '.' + date.split('.')[2]
+
+        }
+
         const event = {
-            id: +id, title, description, date, time, place, color, month: date.split('.')[1] + '.' + date.split('.')[2]
+                    id: +id, title, description, date, time, place, color, month: one
         }
         await API.changeEvent(event, 'admin', '1234')
     }
