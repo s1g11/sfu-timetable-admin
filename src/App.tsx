@@ -39,10 +39,10 @@ function App() {
     }
 
     const changeEvent = async () => {
-        const one = date.split('.')[1] + '.' + date.split('.')[2]
+        let one = date.split('.')[1] + '.' + date.split('.')[2]
 
         if (date.split('.')[1].length === 2) {
-            const one = date.split('.')[1][1] + '.' + date.split('.')[2]
+            one = date.split('.')[1][1] + '.' + date.split('.')[2]
 
         }
 
